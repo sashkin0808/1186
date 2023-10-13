@@ -1,0 +1,68 @@
+@import "normalize.scss";
+@import "var.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {color: inherit;}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	margin: 0;
+	font-family: 'Lexend', sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+	color: #fff;
+	background: #110A1D;
+}
+.container {
+	max-width: 1680px;
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	@media screen and (max-width: 414px) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+a[href^="tel:"] {
+	white-space: nowrap;
+}
+@import "block/header.scss";
+@import "block/main.scss";
+@import "block/footer.scss";
