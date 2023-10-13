@@ -149,6 +149,7 @@ header {
 	}
 	&__active {
 		width: 75px;
+		cursor: pointer;
 
 		@media screen and (max-width: 414px) {
 			width: 36px;
